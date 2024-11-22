@@ -1,4 +1,4 @@
-// src/pages/BrandDetails.js
+
 import React from "react";
 import { useParams } from "react-router-dom";
 import brands from "../../../public/coupon.json";

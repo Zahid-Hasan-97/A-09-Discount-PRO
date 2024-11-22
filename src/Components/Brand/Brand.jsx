@@ -1,4 +1,4 @@
-// src/pages/Brands.js
+
 import React, { useState, useEffect } from "react";
 import brandsData from "../../../public/coupon.json";
 import { useNavigate } from "react-router-dom";
@@ -9,21 +9,21 @@ const Brands = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        // Load brand data from JSON
+
         setBrands(brandsData);
     }, []);
 
-    // Filter brands based on search input
+
     const filteredBrands = brands.filter((brand) =>
         brand.brand_name.toLowerCase().includes(search.toLowerCase())
     );
 
     return (
         <div className="p-6">
-            {/* Page Title */}
+
             <h1 className="text-3xl font-bold text-center mb-6">All Brands</h1>
 
-            {/* Search Bar */}
+
             <div className="mb-6 flex justify-center">
                 <input
                     type="text"
@@ -34,7 +34,7 @@ const Brands = () => {
                 />
             </div>
 
-            {/* Brand Cards */}
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {filteredBrands.length > 0 ? (
                     filteredBrands.map((brand) => (
@@ -54,7 +54,7 @@ const Brands = () => {
                             </div>
                             <p className="text-gray-700 mb-4">{brand.description}</p>
 
-                            {/* Buttons */}
+
                             <div className="flex items-center gap-2">
                                 <button
                                     className="btn btn-primary btn-sm"
