@@ -32,7 +32,7 @@ const Home = () => {
             <h1 className='text-4xl font-semibold text-center pt-20'>Welcome to Discount PRO</h1>
             <section>
                 <h2 className='text-2xl text-center pt-6'>Top Brands</h2>
-                <Marquee pauseOnHover>{topBrands}</Marquee>
+                <Marquee  pauseOnHover>{topBrands}</Marquee>
             </section>
             <Brands></Brands>
             <BrandDetails></BrandDetails>

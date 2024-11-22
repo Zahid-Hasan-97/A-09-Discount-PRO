@@ -9,9 +9,11 @@ const BrandDetails = () => {
     const { id } = useParams();
     const brand = brands.find((brand) => brand._id === id);
 
+    if (!brand) return <div>Brand not found</div>;
+
     return (
         <div className="p-4">
-            <div className="flex items-center gap-4 mb-6 ">
+            <div className="flex items-center gap-4 mb-6">
                 <img src={brand.brand_logo} alt={brand.brand_name} className="w-20 h-20 object-scale-down" />
                 <div>
                     <h1 className="text-2xl font-bold">{brand.brand_name}</h1>
