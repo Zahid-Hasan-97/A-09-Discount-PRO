@@ -1,0 +1,215 @@
+[
+    {
+        "_id": "12345",
+        "brand_name": "Amazon",
+        "rating": 4.5,
+        "description": "Online Shopping Giant",
+        "brand_logo": "/Assets/Amazon.png",
+        "coupons": [
+            {
+                "coupon_code": "AMZ10OFF",
+                "description": "10% off on all products",
+                "expiry_date": "2023-12-31",
+                "condition": "Minimum purchase of $50",
+                "coupon_type": "Percentage"
+            },
+            {
+                "coupon_code": "AMZ20FLAT",
+                "description": "$20 off on electronics",
+                "expiry_date": "2023-11-25",
+                "condition": "No minimum purchase",
+                "coupon_type": "Flat"
+            },
+            {
+                "coupon_code": "AMZWINTER20",
+                "description": "20% off on winter wear",
+                "expiry_date": "2023-12-31",
+                "condition": "Minimum purchase of $50",
+                "coupon_type": "Percentage"
+            },
+            {
+                "coupon_code": "AMZTECH15",
+                "description": "15% off on electronics",
+                "expiry_date": "2023-11-28",
+                "condition": "No minimum purchase",
+                "coupon_type": "Percentage"
+            },
+            {
+                "coupon_code": "AMZBEAUTY25",
+                "description": "$25 off on beauty products",
+                "expiry_date": "2023-12-10",
+                "condition": "Minimum purchase of $100",
+                "coupon_type": "Flat"
+            },
+            {
+                "coupon_code": "AMZFOOD50",
+                "description": "$50 off on food delivery orders",
+                "expiry_date": "2023-11-27",
+                "condition": "Minimum order value of $20",
+                "coupon_type": "Flat"
+            },
+            {
+                "coupon_code": "AMZBOOKS10",
+                "description": "10% off on books",
+                "expiry_date": "2023-12-05",
+                "condition": "No minimum purchase",
+                "coupon_type": "Percentage"
+            }
+        ],
+        "shop_Link": "https://www.amazon.com",
+        "category": "E-commerce",
+        "isSaleOn": true
+    },
+    {
+        "_id": "67890",
+        "brand_name": "Flipkart",
+        "rating": 4.2,
+        "description": "Indian E-commerce Platform",
+        "brand_logo": "/Assets/Flipkart.png",
+        "coupons": [
+            {
+                "coupon_code": "FKRT15OFF",
+                "description": "15% off on fashion products",
+                "expiry_date": "2023-12-15",
+                "condition": "Minimum purchase of ₹1000",
+                "coupon_type": "Percentage"
+            }
+        ],
+        "shop_Link": "https://www.flipkart.com",
+        "category": "E-commerce",
+        "isSaleOn": false
+    },
+    {
+        "_id": "11122",
+        "brand_name": "Myntra",
+        "rating": 4.8,
+        "description": "Fashion and Lifestyle Shopping",
+        "brand_logo": "/Assets/Myntra.png",
+        "coupons": [
+            {
+                "coupon_code": "MNT25OFF",
+                "description": "₹250 off on winter wear",
+                "expiry_date": "2023-11-20",
+                "condition": "No minimum purchase",
+                "coupon_type": "Flat"
+            },
+            {
+                "coupon_code": "FIRSTUSER20",
+                "description": "20% off on first order",
+                "expiry_date": "2023-11-30",
+                "condition": "New users only",
+                "coupon_type": "Percentage"
+            },
+            {
+                "coupon_code": "MIDNIGHTDEAL",
+                "description": "50% off on midnight sale products",
+                "expiry_date": "2023-11-25",
+                "condition": "Valid only during midnight sale",
+                "coupon_type": "Percentage"
+            }
+        ],
+        "shop_Link": "https://www.myntra.com",
+        "category": "Fashion",
+        "isSaleOn": true
+    },
+    {
+        "_id": "33344",
+        "brand_name": "Swiggy",
+        "rating": 4.7,
+        "description": "Food Delivery App",
+        "brand_logo": "/Assets/Swiggy.png",
+        "coupons": [
+            {
+                "coupon_code": "SWIG50OFF",
+                "description": "₹50 off on orders above ₹200",
+                "expiry_date": "2023-12-10",
+                "condition": "Minimum order value ₹200",
+                "coupon_type": "Flat"
+            }
+        ],
+        "shop_Link": "https://www.swiggy.com",
+        "category": "Food",
+        "isSaleOn": true
+    },
+    {
+        "_id": "55566",
+        "brand_name": "Zomato",
+        "rating": 4.6,
+        "description": "Food Delivery App",
+        "brand_logo": "/Assets/Zomato.png",
+        "coupons": [
+            {
+                "coupon_code": "ZOM20PERC",
+                "description": "20% off on all restaurants",
+                "expiry_date": "2023-11-30",
+                "condition": "No minimum order value",
+                "coupon_type": "Percentage"
+            }
+        ],
+        "shop_Link": "https://www.zomato.com",
+        "category": "Food",
+        "isSaleOn": false
+    },
+    {
+        "_id": "22233",
+        "brand_name": "Daraz",
+        "rating": 4.7,
+        "description": "Online Shopping Platform in Bangladesh",
+        "brand_logo": "/Assets/Daraz.png",
+        "coupons": [
+            {
+                "coupon_code": "DARAZ15OFF",
+                "description": "15% off on your first order",
+                "expiry_date": "2023-12-10",
+                "condition": "New customers only",
+                "coupon_type": "Percentage"
+            },
+            {
+                "coupon_code": "MOBWEEKEND",
+                "description": "Extra 10% off on mobile phones",
+                "expiry_date": "2023-11-25",
+                "condition": "Applicable on mobile phones",
+                "coupon_type": "Percentage"
+            },
+            {
+                "coupon_code": "WINTER20",
+                "description": "20% off on winter wear",
+                "expiry_date": "2023-12-31",
+                "condition": "Minimum purchase of $50",
+                "coupon_type": "Percentage"
+            },
+            {
+                "coupon_code": "TECH15",
+                "description": "15% off on electronics",
+                "expiry_date": "2023-11-28",
+                "condition": "No minimum purchase",
+                "coupon_type": "Percentage"
+            },
+            {
+                "coupon_code": "BEAUTY25",
+                "description": "₹250 off on beauty products",
+                "expiry_date": "2023-12-10",
+                "condition": "Minimum purchase of ₹1000",
+                "coupon_type": "Flat"
+            },
+            {
+                "coupon_code": "FOOD50",
+                "description": "₹50 off on food delivery orders",
+                "expiry_date": "2023-11-27",
+                "condition": "Minimum order value of ₹200",
+                "coupon_type": "Flat"
+            },
+            {
+                "coupon_code": "BOOKS10",
+                "description": "10% off on books",
+                "expiry_date": "2023-12-05",
+                "condition": "No minimum purchase",
+                "coupon_type": "Percentage"
+            }
+        ],
+        "shop_Link": "https://www.daraz.com.bd",
+        "category": "Electronics",
+        "isSaleOn": false
+    }
+
+]
