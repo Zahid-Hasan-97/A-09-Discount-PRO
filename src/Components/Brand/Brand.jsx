@@ -1,7 +1,11 @@
 // src/pages/Brands.js
 import React, { useState, useEffect } from "react";
 import brandsData from "../../../public/coupon.json";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+
+export const getBrandsOnSale = () => {
+    return brandsData.filter((brand) => brand.isSaleOn);
+};
 
 const Brands = () => {
     const [search, setSearch] = useState("");
@@ -15,16 +19,18 @@ const Brands = () => {
 
     // Filter brands based on search input
     const filteredBrands = brands.filter((brand) =>
-        brand.brand_name.toLowerCase().includes(search.toLowerCase())
+        brand.isSaleOn && brand.brand_name.toLowerCase().includes(search.toLowerCase())
     );
 
     return (
-        <div className="p-6">
+        <div className="pt-28">
             {/* Page Title */}
-            <h1 className="text-3xl font-bold text-center mb-6">All Brands</h1>
+            <div className="pb-10">
+                <h1 className="text-3xl font-bold text-red-400 text-center">Brands We Offer</h1>
+            </div>
 
             {/* Search Bar */}
-            <div className="mb-6 flex justify-center">
+            <div className="mb-6 flex justify-center pb-20">
                 <input
                     type="text"
                     placeholder="Search Brand"
@@ -34,45 +40,54 @@ const Brands = () => {
                 />
             </div>
 
+            
+
             {/* Brand Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="w-full flex flex-col gap-10 pb-10">
                 {filteredBrands.length > 0 ? (
                     filteredBrands.map((brand) => (
-                        <div key={brand._id} className="card bg-gray-100 shadow-lg p-4">
-                            <div className="flex items-center gap-4 mb-4">
+
+                        <div className="w-full flex gap-8">
+                            <div className="p-5 w-1/5 my-auto bg-gray-300 rounded-2xl">
                                 <img
                                     src={brand.brand_logo}
-                                    alt={brand.brand_name}
-                                    className="w-16 h-16 rounded-full object-scale-down"
-                                />
-                                <div>
-                                    <h2 className="text-xl font-bold">{brand.brand_name}</h2>
-                                    <p className="text-yellow-500 flex items-center gap-1">
-                                        <img className="w-6 h-auto mt-1" src="/Assets/star.png" alt="" /> {brand.rating}
-                                    </p>
-                                </div>
+                                    alt=""
+                                    className="rounded-xl w-48 h-16 object-scale-down mx-auto" />
                             </div>
-                            <p className="text-gray-700 mb-4">{brand.description}</p>
+                            <div className="w-3/4 text-center flex justify-between border rounded-2xl pl-10 pr-10 items-center relative">
 
-                            {/* Buttons */}
-                            <div className="flex items-center gap-2">
-                                <button
-                                    className="btn btn-primary btn-sm"
-                                    onClick={() =>
-                                        navigate(`/brand/${brand._id}`, {
-                                            state: { brand },
-                                        })
-                                    }
-                                >
-                                    View Coupons
-                                </button>
-                                {brand.isSaleOn && (
-                                    <span className="text-red-500 font-bold animate-bounce">
-                                        Sale is On!
-                                    </span>
-                                )}
+                                <div className="flex gap-2 items-center flex-col">
+                                    <div className="flex items-center justify-center gap-3">
+                                        <img className="w-5 h-5 " src="/Assets/star.png" alt="" />
+                                        <p className="">{brand.rating}</p>
+                                    </div>
+                                    
+                                    <h1 className="card-title text-xl font-semibold">{brand.brand_name}</h1>
+                                </div>
+                                <div >
+                                    <h1 className="card-title text-xl font-semibold pb-3">{brand.brand_name}</h1>
+                                    <p>{brand.description}</p>
+                                </div>
+                                <div className="flex flex-col">
+                                    <div>
+                                        {brand.isSaleOn && (
+                                            <span className="text-green-500 text-xl font-bold animate-bounce absolute top-4 right-14">
+                                                Sale is on
+                                            </span>
+                                        )}
+                                    </div>
+                                        
+                                    <Link to={`/login`} className=" mt-10 p-3 rounded-2xl bg-red-400 text-white">View Coupons</Link>
+                                      
+                                </div>
+                                    
+                                
+                                
+                                
                             </div>
                         </div>
+                        
+
                     ))
                 ) : (
                     <p className="text-center text-gray-600">No brands found.</p>

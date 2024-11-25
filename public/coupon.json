@@ -210,6 +210,507 @@
         "shop_Link": "https://www.daraz.com.bd",
         "category": "Electronics",
         "isSaleOn": false
+    },
+    {
+        "_id": "1",
+        "brand_name": "eBay",
+        "rating": 4.5,
+        "description": "Online Marketplace",
+        "brand_logo": "/Assets/Ebay-removebg-preview.png",
+        "coupons": [
+            {
+                "coupon_code": "EBAY10",
+                "description": "10% off on electronics",
+                "expiry_date": "2024-01-15",
+                "condition": "Applicable on orders above ₹500",
+                "coupon_type": "Percentage"
+            },
+            {
+                "coupon_code": "EBAYFREESHIP",
+                "description": "Free Shipping on orders above ₹1000",
+                "expiry_date": "2023-12-20",
+                "condition": "No category restrictions",
+                "coupon_type": "Flat"
+            }
+        ],
+        "shop_Link": "https://www.ebay.com",
+        "category": "E-commerce",
+        "isSaleOn": true
+    },
+    {
+        "_id": "2",
+        "brand_name": "Snapdeal",
+        "rating": 4.2,
+        "description": "Discount Marketplace",
+        "brand_logo": "/Assets/Snapdeal.png",
+        "coupons": [
+            {
+                "coupon_code": "SNAP30OFF",
+                "description": "₹30 off on orders above ₹300",
+                "expiry_date": "2024-02-10",
+                "condition": "Minimum order value ₹300",
+                "coupon_type": "Flat"
+            },
+            {
+                "coupon_code": "SNAPNEW",
+                "description": "15% off for new users",
+                "expiry_date": "2024-01-05",
+                "condition": "New users only",
+                "coupon_type": "Percentage"
+            }
+        ],
+        "shop_Link": "https://www.snapdeal.com",
+        "category": "E-commerce",
+        "isSaleOn": true
+    },
+    {
+        "_id": "3",
+        "brand_name": "BestBuy",
+        "rating": 4.8,
+        "description": "Electronics Retailer",
+        "brand_logo": "/Assets/BestBuy.png",
+        "coupons": [
+            {
+                "coupon_code": "BB20SAVE",
+                "description": "Save $20 on orders above $200",
+                "expiry_date": "2024-03-15",
+                "condition": "Electronics only",
+                "coupon_type": "Flat"
+            },
+            {
+                "coupon_code": "BBFREESHIP",
+                "description": "Free Shipping on all orders",
+                "expiry_date": "2024-02-01",
+                "condition": "Valid on all categories",
+                "coupon_type": "Flat"
+            }
+        ],
+        "shop_Link": "https://www.bestbuy.com",
+        "category": "Electronics",
+        "isSaleOn": true
+    },
+    {
+        "_id": "4",
+        "brand_name": "Pickaboo",
+        "rating": 4.3,
+        "description": "Electronics and Accessories",
+        "brand_logo": "/Assets/Pickaboo-removebg-preview.png",
+        "coupons": [
+            {
+                "coupon_code": "PICK500",
+                "description": "Flat ₹500 off on orders above ₹5000",
+                "expiry_date": "2024-04-01",
+                "condition": "Applicable on select products",
+                "coupon_type": "Flat"
+            },
+            {
+                "coupon_code": "PICK20",
+                "description": "20% off on first order",
+                "expiry_date": "2024-01-20",
+                "condition": "New users only",
+                "coupon_type": "Percentage"
+            },
+            {
+                "coupon_code": "PICKABOO100",
+                "description": "Flat ₹100 off on orders above ₹1000",
+                "expiry_date": "2024-03-15",
+                "condition": "Minimum order value ₹1000",
+                "coupon_type": "Flat"
+            },
+            {
+                "coupon_code": "PICKABOO15ELEC",
+                "description": "15% off on electronics",
+                "expiry_date": "2024-04-01",
+                "condition": "Electronics category only",
+                "coupon_type": "Percentage"
+            },
+            {
+                "coupon_code": "PICKFREESHIP",
+                "description": "Free shipping on orders above ₹500",
+                "expiry_date": "2024-02-28",
+                "condition": "Valid on all categories",
+                "coupon_type": "Flat"
+            },
+            {
+                "coupon_code": "PICKABOO500",
+                "description": "₹500 off on orders above ₹5000",
+                "expiry_date": "2024-05-10",
+                "condition": "Minimum order value ₹5000",
+                "coupon_type": "Flat"
+            },
+            {
+                "coupon_code": "PICKABOO30APP",
+                "description": "30% off for app users",
+                "expiry_date": "2024-03-31",
+                "condition": "App purchases only",
+                "coupon_type": "Percentage"
+            },
+            {
+                "coupon_code": "PICKNEWUSER20",
+                "description": "20% off for new users",
+                "expiry_date": "2024-01-20",
+                "condition": "First-time users only",
+                "coupon_type": "Percentage"
+            },
+            {
+                "coupon_code": "PICKCASHBACK10",
+                "description": "10% cashback on pre-paid orders",
+                "expiry_date": "2024-02-15",
+                "condition": "Cashback credited as wallet points",
+                "coupon_type": "Special"
+            }
+        ],
+        "shop_Link": "https://www.pickaboo.com",
+        "category": "Electronics",
+        "isSaleOn": true
+    },
+    {
+        "_id": "5",
+        "brand_name": "Walmart",
+        "rating": 4.9,
+        "description": "Retail and Groceries",
+        "brand_logo": "/Assets/Walmart-removebg-preview.png",
+        "coupons": [
+            {
+                "coupon_code": "WALMART5",
+                "description": "5% off on groceries",
+                "expiry_date": "2024-02-28",
+                "condition": "Minimum purchase $50",
+                "coupon_type": "Percentage"
+            },
+            {
+                "coupon_code": "WALMART50",
+                "description": "$50 off on furniture above $500",
+                "expiry_date": "2024-03-10",
+                "condition": "Furniture category only",
+                "coupon_type": "Flat"
+            },
+            {
+                "coupon_code": "WALMART200OFF",
+                "description": "Flat ₹200 off on orders above ₹1500",
+                "expiry_date": "2024-02-28",
+                "condition": "Minimum order value ₹1500",
+                "coupon_type": "Flat"
+            },
+            {
+                "coupon_code": "WALMART10GROCERY",
+                "description": "10% off on grocery orders",
+                "expiry_date": "2024-03-15",
+                "condition": "Applicable on groceries only",
+                "coupon_type": "Percentage"
+            },
+            {
+                "coupon_code": "WALMARTFREEDEL",
+                "description": "Free delivery on orders above ₹500",
+                "expiry_date": "2024-01-20",
+                "condition": "No category restrictions",
+                "coupon_type": "Flat"
+            },
+            {
+                "coupon_code": "WALMART50FURN",
+                "description": "₹50 off on furniture orders above ₹500",
+                "expiry_date": "2024-04-01",
+                "condition": "Furniture collection only",
+                "coupon_type": "Flat"
+            },
+            {
+                "coupon_code": "WALMART25ELEC",
+                "description": "25% off on electronics",
+                "expiry_date": "2024-05-01",
+                "condition": "Applicable on electronics only",
+                "coupon_type": "Percentage"
+            },
+            {
+                "coupon_code": "WALMARTBACKTO20",
+                "description": "20% off during back-to-school sale",
+                "expiry_date": "2024-02-15",
+                "condition": "Applicable on school supplies",
+                "coupon_type": "Percentage"
+            },
+            {
+                "coupon_code": "WALMART250GIFT",
+                "description": "Free ₹250 gift card on orders above ₹5000",
+                "expiry_date": "2024-03-10",
+                "condition": "Gift card valid for 1 year",
+                "coupon_type": "Special"
+            }
+        ],
+        "shop_Link": "https://www.walmart.com",
+        "category": "Retail",
+        "isSaleOn": true
+    },
+    {
+        "_id": "6",
+        "brand_name": "Shopify",
+        "rating": 4.6,
+        "description": "E-commerce Platform",
+        "brand_logo": "/Assets/Shopify-removebg-preview.png",
+        "coupons": [
+            {
+                "coupon_code": "SHOP50",
+                "description": "50% off on first-year subscription",
+                "expiry_date": "2024-01-01",
+                "condition": "New users only",
+                "coupon_type": "Percentage"
+            },
+            {
+                "coupon_code": "SHOP10",
+                "description": "10% off on all plans",
+                "expiry_date": "2024-03-31",
+                "condition": "Valid for all users",
+                "coupon_type": "Percentage"
+            },
+            {
+                "coupon_code": "SHOPIFY50",
+                "description": "50% off on first 6 months of subscription",
+                "expiry_date": "2024-03-01",
+                "condition": "New users only",
+                "coupon_type": "Percentage"
+            },
+            {
+                "coupon_code": "SHOPIFY10EXTRA",
+                "description": "Extra 10% off on yearly plans",
+                "expiry_date": "2024-05-01",
+                "condition": "Annual subscriptions only",
+                "coupon_type": "Percentage"
+            },
+            {
+                "coupon_code": "SHOPIFYEXTEND",
+                "description": "1 extra month free with any plan",
+                "expiry_date": "2024-04-15",
+                "condition": "Valid for all users",
+                "coupon_type": "Special"
+            },
+            {
+                "coupon_code": "SHOPIFY30LAUNCH",
+                "description": "30% off for launching a new store",
+                "expiry_date": "2024-02-28",
+                "condition": "First-time store creators",
+                "coupon_type": "Percentage"
+            },
+            {
+                "coupon_code": "SHOPIFYMARKET5",
+                "description": "5% off on marketing tools add-ons",
+                "expiry_date": "2024-06-30",
+                "condition": "Applicable for paid tools only",
+                "coupon_type": "Percentage"
+            },
+            {
+                "coupon_code": "SHOPIFY200BONUS",
+                "description": "₹200 bonus credit for app purchases",
+                "expiry_date": "2024-03-31",
+                "condition": "Minimum app spend ₹1000",
+                "coupon_type": "Flat"
+            },
+            {
+                "coupon_code": "SHOPIFYEXPERT25",
+                "description": "25% off on expert consultations",
+                "expiry_date": "2024-04-30",
+                "condition": "Expert consultation service only",
+                "coupon_type": "Percentage"
+            }
+        ],
+        "shop_Link": "https://www.shopify.com",
+        "category": "E-commerce",
+        "isSaleOn": true
+    },
+    {
+        "_id": "7",
+        "brand_name": "Nike",
+        "rating": 4.7,
+        "description": "Sportswear and Accessories",
+        "brand_logo": "/Assets/Nike-removebg-preview.png",
+        "coupons": [
+            {
+                "coupon_code": "NIKE20",
+                "description": "20% off on running shoes",
+                "expiry_date": "2024-02-10",
+                "condition": "Shoes category only",
+                "coupon_type": "Percentage"
+            },
+            {
+                "coupon_code": "NIKEFREESHIP",
+                "description": "Free Shipping on all orders",
+                "expiry_date": "2024-01-25",
+                "condition": "No minimum order value",
+                "coupon_type": "Flat"
+            },
+            {
+                "coupon_code": "NIKE50OFF",
+                "description": "Flat ₹50 off on orders above ₹500",
+                "expiry_date": "2024-03-15",
+                "condition": "Minimum order value ₹500",
+                "coupon_type": "Flat"
+            },
+            {
+                "coupon_code": "NIKE30RUN",
+                "description": "30% off on running gear",
+                "expiry_date": "2024-02-20",
+                "condition": "Running collection only",
+                "coupon_type": "Percentage"
+            },
+            {
+                "coupon_code": "NIKELOYAL",
+                "description": "20% off for repeat customers",
+                "expiry_date": "2024-04-30",
+                "condition": "Applicable after 2 prior purchases",
+                "coupon_type": "Percentage"
+            },
+            {
+                "coupon_code": "NIKESPRING",
+                "description": "₹500 off on spring collection orders above ₹4000",
+                "expiry_date": "2024-04-10",
+                "condition": "Spring collection only",
+                "coupon_type": "Flat"
+            },
+            {
+                "coupon_code": "NIKEFREEMASK",
+                "description": "Free sports mask with orders above ₹2500",
+                "expiry_date": "2024-03-05",
+                "condition": "While supplies last",
+                "coupon_type": "Special"
+            }
+        ],
+        "shop_Link": "https://www.nike.com",
+        "category": "Sportswear",
+        "isSaleOn": false
+    },
+    {
+        "_id": "8",
+        "brand_name": "Puma",
+        "rating": 4.5,
+        "description": "Athletic and Casual Wear",
+        "brand_logo": "/Assets/Puma-removebg-preview.png",
+        "coupons": [
+            {
+                "coupon_code": "PUMA15",
+                "description": "15% off on all products",
+                "expiry_date": "2024-03-05",
+                "condition": "Valid sitewide",
+                "coupon_type": "Percentage"
+            },
+            {
+                "coupon_code": "PUMAFREE",
+                "description": "Free gift on orders above ₹3000",
+                "expiry_date": "2024-01-10",
+                "condition": "Gift varies by availability",
+                "coupon_type": "Special"
+            },
+            {
+                "coupon_code": "PUMA500",
+                "description": "Flat ₹500 off on orders above ₹3000",
+                "expiry_date": "2024-03-20",
+                "condition": "Minimum order value ₹3000",
+                "coupon_type": "Flat"
+            },
+            {
+                "coupon_code": "PUMA20OFF",
+                "description": "20% off on footwear",
+                "expiry_date": "2024-02-28",
+                "condition": "Applicable on footwear only",
+                "coupon_type": "Percentage"
+            },
+            {
+                "coupon_code": "PUMANEW10",
+                "description": "10% off for first-time users",
+                "expiry_date": "2024-01-31",
+                "condition": "New users only",
+                "coupon_type": "Percentage"
+            },
+            {
+                "coupon_code": "PUMAFREECAP",
+                "description": "Free cap on orders above ₹2000",
+                "expiry_date": "2024-04-15",
+                "condition": "Limited stock available",
+                "coupon_type": "Special"
+            },
+            {
+                "coupon_code": "PUMA30ACTIVE",
+                "description": "30% off on activewear",
+                "expiry_date": "2024-05-01",
+                "condition": "Activewear category only",
+                "coupon_type": "Percentage"
+            },
+            {
+                "coupon_code": "PUMASALE15",
+                "description": "15% off during clearance sale",
+                "expiry_date": "2024-03-10",
+                "condition": "Valid on sale items only",
+                "coupon_type": "Percentage"
+            },
+            {
+                "coupon_code": "PUMABAG50",
+                "description": "₹50 off on backpacks above ₹500",
+                "expiry_date": "2024-02-15",
+                "condition": "Backpack collection only",
+                "coupon_type": "Flat"
+            }
+        ],
+        "shop_Link": "https://www.puma.com",
+        "category": "Sportswear",
+        "isSaleOn": true
+    },
+    {
+        "_id": "9",
+        "brand_name": "Adidas",
+        "rating": 4.6,
+        "description": "Sports and Lifestyle Brand",
+        "brand_logo": "/Assets/Addidas-removebg-preview.png",
+        "coupons": [
+            {
+                "coupon_code": "ADIDAS25",
+                "description": "25% off on all footwear",
+                "expiry_date": "2024-03-31",
+                "condition": "Footwear only",
+                "coupon_type": "Percentage"
+            },
+            {
+                "coupon_code": "ADIDASFREESHIP",
+                "description": "Free Shipping on all orders",
+                "expiry_date": "2024-02-20",
+                "condition": "No minimum order value",
+                "coupon_type": "Flat"
+            },
+            {
+                "coupon_code": "ADIDAS50",
+                "description": "Flat ₹50 off on orders above ₹500",
+                "expiry_date": "2024-04-15",
+                "condition": "Minimum order value ₹500",
+                "coupon_type": "Flat"
+            },
+            {
+                "coupon_code": "ADIDAS10NEW",
+                "description": "10% off for new customers",
+                "expiry_date": "2024-02-28",
+                "condition": "New users only",
+                "coupon_type": "Percentage"
+            },
+            {
+                "coupon_code": "ADIDASFEST",
+                "description": "15% off during the festive season",
+                "expiry_date": "2024-03-10",
+                "condition": "Valid on selected categories",
+                "coupon_type": "Percentage"
+            },
+            {
+                "coupon_code": "ADIDASFREEBAG",
+                "description": "Free gym bag on orders above ₹3000",
+                "expiry_date": "2024-05-01",
+                "condition": "While stocks last",
+                "coupon_type": "Special"
+            },
+            {
+                "coupon_code": "ADIDASLOYAL20",
+                "description": "20% off for loyal customers",
+                "expiry_date": "2024-06-30",
+                "condition": "Applicable after three purchases",
+                "coupon_type": "Percentage"
+            }
+            
+        ],
+        "shop_Link": "https://www.adidas.com",
+        "category": "Sportswear",
+        "isSaleOn": false
     }
 
 ]

@@ -10,10 +10,11 @@ import Home from './Components/Home/Home';
 import Login from './Components/Login/Login';
 import Register from './Components/Register/Register';
 import AuthProviders from './Providers/AuthProviders';
-import Brands from './Components/Brand/Brand';
+
 import BrandDetails from './Components/BrandDetails/BrandDetails';
 import PrivateRoute from './Routes/PrivateRoute';
 import MyProfile from './Components/MyProfile/MyProfile';
+import Brands from './Components/Brand/Brand';
 
 const router = createBrowserRouter([
   {
@@ -34,9 +35,8 @@ const router = createBrowserRouter([
       },
       {
         path: '/brand',
-        element: <PrivateRoute> 
-          <Brands></Brands>,
-        </PrivateRoute> 
+        element: <Brands></Brands>
+
       },
       {
         path: '/brand/:id',
