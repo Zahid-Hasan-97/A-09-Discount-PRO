@@ -15,6 +15,7 @@ import BrandDetails from './Components/BrandDetails/BrandDetails';
 import PrivateRoute from './Routes/PrivateRoute';
 import MyProfile from './Components/MyProfile/MyProfile';
 import Brands from './Components/Brand/Brand';
+import AboutDev from './Components/AboutDev/AboutDev';
 
 const router = createBrowserRouter([
   {
@@ -49,6 +50,10 @@ const router = createBrowserRouter([
         element: <PrivateRoute>
           <MyProfile></MyProfile>
         </PrivateRoute>
+      },
+      {
+        path:'/dev',
+        element: <AboutDev></AboutDev>
       }
 
     ]

@@ -4,7 +4,7 @@
         "brand_name": "Amazon",
         "rating": 4.5,
         "description": "Online Shopping Giant",
-        "brand_logo": "/Assets/Amazon.png",
+        "brand_logo": "./Amazon.png",
         "coupons": [
             {
                 "coupon_code": "AMZ10OFF",
@@ -65,7 +65,7 @@
         "brand_name": "Flipkart",
         "rating": 4.2,
         "description": "Indian E-commerce Platform",
-        "brand_logo": "/Assets/Flipkart.png",
+        "brand_logo": "./Flipkart.png",
         "coupons": [
             {
                 "coupon_code": "FKRT15OFF",
@@ -84,7 +84,7 @@
         "brand_name": "Myntra",
         "rating": 4.8,
         "description": "Fashion and Lifestyle Shopping",
-        "brand_logo": "/Assets/Myntra.png",
+        "brand_logo": "./Myntra.png",
         "coupons": [
             {
                 "coupon_code": "MNT25OFF",
@@ -117,7 +117,7 @@
         "brand_name": "Swiggy",
         "rating": 4.7,
         "description": "Food Delivery App",
-        "brand_logo": "/Assets/Swiggy.png",
+        "brand_logo": "./Swiggy.png",
         "coupons": [
             {
                 "coupon_code": "SWIG50OFF",
@@ -136,7 +136,7 @@
         "brand_name": "Zomato",
         "rating": 4.6,
         "description": "Food Delivery App",
-        "brand_logo": "/Assets/Zomato.png",
+        "brand_logo": "./Zomato.png",
         "coupons": [
             {
                 "coupon_code": "ZOM20PERC",
@@ -155,7 +155,7 @@
         "brand_name": "Daraz",
         "rating": 4.7,
         "description": "Online Shopping Platform in Bangladesh",
-        "brand_logo": "/Assets/Daraz.png",
+        "brand_logo": "./Daraz.png",
         "coupons": [
             {
                 "coupon_code": "DARAZ15OFF",
@@ -216,7 +216,7 @@
         "brand_name": "eBay",
         "rating": 4.5,
         "description": "Online Marketplace",
-        "brand_logo": "/Assets/Ebay-removebg-preview.png",
+        "brand_logo": "./Ebay-removebg-preview.png",
         "coupons": [
             {
                 "coupon_code": "EBAY10",
@@ -242,7 +242,7 @@
         "brand_name": "Snapdeal",
         "rating": 4.2,
         "description": "Discount Marketplace",
-        "brand_logo": "/Assets/Snapdeal.png",
+        "brand_logo": "./Snapdeal.png",
         "coupons": [
             {
                 "coupon_code": "SNAP30OFF",
@@ -268,7 +268,7 @@
         "brand_name": "BestBuy",
         "rating": 4.8,
         "description": "Electronics Retailer",
-        "brand_logo": "/Assets/BestBuy.png",
+        "brand_logo": "./BestBuy.png",
         "coupons": [
             {
                 "coupon_code": "BB20SAVE",
@@ -294,7 +294,7 @@
         "brand_name": "Pickaboo",
         "rating": 4.3,
         "description": "Electronics and Accessories",
-        "brand_logo": "/Assets/Pickaboo-removebg-preview.png",
+        "brand_logo": "./Pickaboo-removebg-preview.png",
         "coupons": [
             {
                 "coupon_code": "PICK500",
@@ -369,7 +369,7 @@
         "brand_name": "Walmart",
         "rating": 4.9,
         "description": "Retail and Groceries",
-        "brand_logo": "/Assets/Walmart-removebg-preview.png",
+        "brand_logo": "./Walmart-removebg-preview.png",
         "coupons": [
             {
                 "coupon_code": "WALMART5",
@@ -444,7 +444,7 @@
         "brand_name": "Shopify",
         "rating": 4.6,
         "description": "E-commerce Platform",
-        "brand_logo": "/Assets/Shopify-removebg-preview.png",
+        "brand_logo": "./Shopify-removebg-preview.png",
         "coupons": [
             {
                 "coupon_code": "SHOP50",
@@ -519,7 +519,7 @@
         "brand_name": "Nike",
         "rating": 4.7,
         "description": "Sportswear and Accessories",
-        "brand_logo": "/Assets/Nike-removebg-preview.png",
+        "brand_logo": "./Nike-removebg-preview.png",
         "coupons": [
             {
                 "coupon_code": "NIKE20",
@@ -580,7 +580,7 @@
         "brand_name": "Puma",
         "rating": 4.5,
         "description": "Athletic and Casual Wear",
-        "brand_logo": "/Assets/Puma-removebg-preview.png",
+        "brand_logo": "./Puma-removebg-preview.png",
         "coupons": [
             {
                 "coupon_code": "PUMA15",
@@ -655,7 +655,7 @@
         "brand_name": "Adidas",
         "rating": 4.6,
         "description": "Sports and Lifestyle Brand",
-        "brand_logo": "/Assets/Addidas-removebg-preview.png",
+        "brand_logo": "./Addidas-removebg-preview.png",
         "coupons": [
             {
                 "coupon_code": "ADIDAS25",

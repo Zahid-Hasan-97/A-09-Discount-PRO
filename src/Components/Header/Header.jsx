@@ -26,10 +26,10 @@ const Header = () => {
     return (
         <div className="w-full mx-auto navbar pt-5 pb-5  top-0 left-0 z-50 ">
             <div className="navbar-start ">
-                <NavLink to='/' className=" font-bold flex items-center gap-3 text-2xl " > <span><img className='w-12' src="/Assets/discount.png" alt="" /></span >Discount PRO</NavLink>
+                <NavLink to='/' className=" font-bold flex items-center gap-3 text-2xl " > <span><img className='w-12' src="/public/discount.png" alt="" /></span >Discount PRO</NavLink>
             </div>
             <div className="navbar-center lg:flex">
-                <ul className=" menu-horizontal px-1 gap-10 text-black">
+                <ul className=" menu-horizontal px-1 gap-10 text-black text-xl font-normal">
                     {links}
                 </ul>
             </div>
@@ -58,7 +58,15 @@ const Header = () => {
                         </div>
                     
                     :
-                    <Link to="/login">Login</Link>
+
+                    <>
+                        <div className='flex gap-4'>
+                                <Link className='text-xl border rounded-2xl p-2 bg-red-400 animate-pulse text-white' to='/register'>Register</Link>
+                                <Link className='text-xl border rounded-2xl p-2' to="/login">Login</Link>
+                        </div>
+                        
+                    </>
+                    
                 }
             </div>
         </div>

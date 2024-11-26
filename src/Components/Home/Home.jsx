@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import Marquee from 'react-fast-marquee';
-import BrandDetails from '../BrandDetails/BrandDetails';
 import { getBrandsOnSale } from '../Brand/Brand';
 import { Link } from 'react-router-dom';
 
@@ -22,7 +21,6 @@ const Home = () => {
             .catch((error) => console.error('Error fetching brands:', error));
     }, []);
     const topBrands = brands.map((brand) => (
-        // <img key={brand._id} src={brand.brand_logo} alt={brand.brand_name} style={{ width: '100px' }} />
         <div className=' px-10 0 pt-16 pb-10'>
             <img key={brand._id} src={brand.brand_logo} alt={brand.brand_name} className=' border gap-10 px-2 w-48 h-32 object-scale-down rounded-2xl ' />
         </div>
@@ -34,7 +32,7 @@ const Home = () => {
             <div className="carousel w-full">
                 <div id="slide1" className="carousel-item relative w-full ">
                     <img
-                        src="/Assets/Amazon poster.png"
+                        src="/public/Amazon poster 2.jpg"
                         className="w-full rounded-3xl" />
                     <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                         <a href="#slide4" className="btn btn-circle">❮</a>
@@ -43,7 +41,7 @@ const Home = () => {
                 </div>
                 <div id="slide2" className="carousel-item relative w-full">
                     <img
-                        src="/Assets/daraz-electronics-week.png"
+                        src="/public/daraz-electronics-week.png"
                         className="w-full rounded-3xl" />
                     <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                         <a href="#slide1" className="btn btn-circle">❮</a>
@@ -52,7 +50,7 @@ const Home = () => {
                 </div>
                 <div id="slide3" className="carousel-item relative w-full">
                     <img
-                        src="/Assets/Myntra poster.jpg"
+                        src="/public/Myntra poster.jpg"
                         className="w-full rounded-3xl" />
                     <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                         <a href="#slide2" className="btn btn-circle">❮</a>
@@ -61,7 +59,7 @@ const Home = () => {
                 </div>
                 <div id="slide4" className="carousel-item relative w-full">
                     <img
-                        src="/Assets/Flipkart poster.jpg"
+                        src="/public/Flipkart poster.jpg"
                         className="w-full rounded-3xl" />
                     <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                         <a href="#slide3" className="btn btn-circle">❮</a>
@@ -94,11 +92,11 @@ const Home = () => {
                                             <h2 className=" card-title text-2xl font-bold">{brand.brand_name}</h2>
                                             <div className="card-body items-center text-center border rounded-2xl">
                                                 <div className="flex gap-3">
-                                                    <img className="w-6" src="/Assets/discount-tag.png" alt="" />
+                                                    <img className="w-6" src="/public/discount-tag.png" alt="" />
                                                     <p>Total Coupons: {brand.coupons.length}</p>
                                                 </div>
                                                 <div className="flex gap-3">
-                                                    <img className="w-6" src="/Assets/categories.png" alt="" />
+                                                    <img className="w-6" src="/public/categories.png" alt="" />
                                                     <p>{brand.category}</p>
                                                 </div>
 

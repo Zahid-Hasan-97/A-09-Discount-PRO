@@ -2,7 +2,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import brandsData from "../../../public/coupon.json";
 import { Link, useNavigate } from "react-router-dom";
-import BrandDetails from "../BrandDetails/BrandDetails";
 import { AuthContext } from "../../Providers/AuthProviders";
 
 export const getBrandsOnSale = () => {
@@ -74,7 +73,7 @@ const Brands = () => {
 
                                 <div className="flex gap-2 items-center flex-col">
                                     <div className="flex items-center justify-center gap-3">
-                                        <img className="w-5 h-5 " src="/Assets/star.png" alt="" />
+                                        <img className="w-5 h-5 " src="/public/star.png" alt="" />
                                         <p className="">{brand.rating}</p>
                                     </div>
                                     
