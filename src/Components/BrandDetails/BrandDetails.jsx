@@ -22,9 +22,8 @@ const BrandDetails = () => {
                 </div>
                 <div>
                     <div className="flex items-center justify-center gap-2">
-                        <p className="">{brand.rating}</p>
                         <img className="w-5 h-5 " src="https://i.ibb.co.com/Kq2ShvH/star.png" alt="" />
-                        
+                        <p className="">{brand.rating}</p>
                     </div>
                     <h1 className="text-2xl font-bold">{brand.brand_name}</h1>
                 </div>
@@ -41,7 +40,7 @@ const BrandDetails = () => {
                         <div class="bg-white text-gray-800 rounded-lg px-4 py-2 flex items-center justify-between">
                             <span class="text-2xl font-semibold">{coupon.coupon_code}</span>
 
-                            <CopyToClipboard>
+                            <CopyToClipboard text={coupon.coupon_code} onCopy={() => toast.success("Coupon successfully copied!")}>
                                 <button className="bg-gray-700 text-white px-3 py-1 rounded hover:bg-black focus:outline-none focus:ring-2">
                                     Copy Code
                                 </button>

@@ -1,4 +1,3 @@
-// src/pages/Brands.js
 import React, { useState, useEffect, useContext } from "react";
 import brandsData from "../../../public/coupon.json";
 import { Link, useNavigate } from "react-router-dom";
@@ -26,20 +25,16 @@ const Brands = () => {
 
     const handleViewCoupons = (brand) => {
         if (user) {
-            // If logged in, navigate to BrandDetails route
             navigate(`/brand/${brand._id}`, { state: { brand } });
         } else {
-            // If not logged in, navigate to Login page
             navigate("/login");
         }
     };
 
     useEffect(() => {
-        // Load brand data from JSON
         setBrands(brandsData);
     }, []);
 
-    // Filter brands based on search input
     const filteredBrands = brands.filter((brand) =>
         brand.isSaleOn && brand.brand_name.toLowerCase().includes(search.toLowerCase())
     );

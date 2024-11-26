@@ -70,5 +70,6 @@ createRoot(document.getElementById('root')).render(
     <AuthProviders>
       <RouterProvider router={router} />
     </AuthProviders>
+    <ToastContainer></ToastContainer>
   </StrictMode>,
 )

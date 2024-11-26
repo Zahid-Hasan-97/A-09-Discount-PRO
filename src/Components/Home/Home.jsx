@@ -1,9 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import Marquee from 'react-fast-marquee';
 import { getBrandsOnSale } from '../Brand/Brand';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import Aos from 'aos';
 import 'aos/dist/aos.css'
+import { AuthContext } from '../../Providers/AuthProviders';
+
 
 const Home = () => {
 
@@ -12,6 +14,17 @@ const Home = () => {
     }, [])
     const [brands, setBrands] = useState([]);
     const [loading, setLoading] = useState(true);
+
+    const {user} = useContext(AuthContext)
+    const navigate = useNavigate()
+
+    const handleViewCoupons = (brand) => {
+        if (user) {
+            navigate(`/brand/${brand._id}`, { state: { brand } });
+        } else {
+            navigate("/login");
+        }
+    };
 
 
     const brandOnSale = getBrandsOnSale();
@@ -106,7 +119,7 @@ const Home = () => {
                                                 </div>
 
                                             </div>
-                                            <Link to={`/login`} className="border p-3 rounded-2xl bg-red-400 text-white">View Coupons</Link>
+                                            <button onClick={() => handleViewCoupons(brand)} className="border p-3 rounded-2xl bg-red-400 text-white">View Coupons</button>
                                         </span>
                                     )}
 
