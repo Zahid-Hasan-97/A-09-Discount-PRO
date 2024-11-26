@@ -73,7 +73,7 @@ const Brands = () => {
 
                                 <div className="flex gap-2 items-center flex-col">
                                     <div className="flex items-center justify-center gap-3">
-                                        <img className="w-5 h-5 " src="/public/star.png" alt="" />
+                                        <img className="w-5 h-5 " src="https://i.ibb.co.com/Kq2ShvH/star.png" alt="" />
                                         <p className="">{brand.rating}</p>
                                     </div>
                                     

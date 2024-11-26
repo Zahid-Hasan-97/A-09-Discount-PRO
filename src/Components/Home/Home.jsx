@@ -32,7 +32,7 @@ const Home = () => {
             <div className="carousel w-full">
                 <div id="slide1" className="carousel-item relative w-full ">
                     <img
-                        src="/public/Amazon poster 2.jpg"
+                        src="https://i.ibb.co.com/W0Qq7LV/Amazon-poster-2.jpg"
                         className="w-full rounded-3xl" />
                     <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                         <a href="#slide4" className="btn btn-circle">❮</a>
@@ -41,7 +41,7 @@ const Home = () => {
                 </div>
                 <div id="slide2" className="carousel-item relative w-full">
                     <img
-                        src="/public/daraz-electronics-week.png"
+                        src="https://i.ibb.co.com/ZzLxCvG/daraz-electronics-week.png"
                         className="w-full rounded-3xl" />
                     <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                         <a href="#slide1" className="btn btn-circle">❮</a>
@@ -50,7 +50,7 @@ const Home = () => {
                 </div>
                 <div id="slide3" className="carousel-item relative w-full">
                     <img
-                        src="/public/Myntra poster.jpg"
+                        src="https://i.ibb.co.com/28hMJKT/Myntra-poster.jpg"
                         className="w-full rounded-3xl" />
                     <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                         <a href="#slide2" className="btn btn-circle">❮</a>
@@ -59,7 +59,7 @@ const Home = () => {
                 </div>
                 <div id="slide4" className="carousel-item relative w-full">
                     <img
-                        src="/public/Flipkart poster.jpg"
+                        src="https://i.ibb.co.com/Jz6xb8f/Flipkart-poster.jpg"
                         className="w-full rounded-3xl" />
                     <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                         <a href="#slide3" className="btn btn-circle">❮</a>
@@ -92,11 +92,12 @@ const Home = () => {
                                             <h2 className=" card-title text-2xl font-bold">{brand.brand_name}</h2>
                                             <div className="card-body items-center text-center border rounded-2xl">
                                                 <div className="flex gap-3">
-                                                    <img className="w-6" src="/public/discount-tag.png" alt="" />
+                                                    <img className="w-6" src="https://i.ibb.co.com/BwrbQpq/discount-tag.png" alt="" />
                                                     <p>Total Coupons: {brand.coupons.length}</p>
                                                 </div>
                                                 <div className="flex gap-3">
-                                                    <img className="w-6" src="/public/categories.png" alt="" />
+                                                    <img className="w-6" src="https://i.ibb.co.com/R0c3d0y/categories.png
+https://i.ibb.co.com/BwrbQpq/discount-tag.png" alt="" />
                                                     <p>{brand.category}</p>
                                                 </div>
 

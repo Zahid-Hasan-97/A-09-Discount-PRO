@@ -25,7 +25,7 @@ const BrandDetails = () => {
                 <div>
                     <div className="flex items-center justify-center gap-2">
                         <p className="">{brand.rating}</p>
-                        <img className="w-5 h-5 " src="/public/star.png" alt="" />
+                        <img className="w-5 h-5 " src="https://i.ibb.co.com/Kq2ShvH/star.png" alt="" />
                         
                     </div>
                     <h1 className="text-2xl font-bold">{brand.brand_name}</h1>
