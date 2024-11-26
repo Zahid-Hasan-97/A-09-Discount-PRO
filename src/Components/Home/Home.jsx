@@ -5,6 +5,8 @@ import { useNavigate } from 'react-router-dom';
 import Aos from 'aos';
 import 'aos/dist/aos.css'
 import { AuthContext } from '../../Providers/AuthProviders';
+import Feature from '../Feature/Feature';
+import Ability from '../Ability/Ability';
 
 
 const Home = () => {
@@ -26,9 +28,7 @@ const Home = () => {
         }
     };
 
-
     const brandOnSale = getBrandsOnSale();
-
     useEffect(() => {
         fetch('/public/coupon.json')
             .then((res) => res.json())
@@ -40,13 +40,18 @@ const Home = () => {
     }, []);
     const topBrands = brands.map((brand) => (
         <div className=' px-10 0 pt-16 pb-10'>
-            <img key={brand._id} src={brand.brand_logo} alt={brand.brand_name} className=' border gap-10 px-2 w-48 h-32 object-scale-down rounded-2xl ' />
+            <a href={brand.shop_Link} target="_blank">
+                <img key={brand._id} src={brand.brand_logo} alt={brand.brand_name} className=' border gap-10 px-2 w-48 h-32 object-scale-down rounded-2xl ' />
+            </a>
+            
         </div>
         
     ));
 
     return (
+
         <div className='pb-20'>
+            
             <div className="carousel w-full">
                 <div id="slide1" className="carousel-item relative w-full ">
                     <img
@@ -134,10 +139,11 @@ const Home = () => {
                     )}
                 </div>
             </section>
+            <Ability></Ability>
+            <Feature></Feature>
         </div>
         
     );
 };
 
 export default Home;
-
