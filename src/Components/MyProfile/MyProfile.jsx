@@ -4,23 +4,30 @@ import { AuthContext } from '../../Providers/AuthProviders';
 const MyProfile = () => {
     const {user} = useContext(AuthContext)
     return (
-        <div
-            className="max-w-2xl mx-4 sm:max-w-sm md:max-w-sm lg:max-w-sm xl:max-w-sm sm:mx-auto md:mx-auto lg:mx-auto xl:mx-auto mt-16 bg-white shadow-xl rounded-lg text-gray-900 pb-8">
+        <div class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden rounded-3xl">
+            <div class="absolute inset-0">
+                <img className='w-full rounded-3xl' src="https://images.unsplash.com/photo-1522252234503-e356532cafd5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw2fHxjb2RlfGVufDB8MHx8fDE2OTQwOTg0MTZ8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="Background Image" class="object-cover object-center w-full h-full" />
+                <div class="absolute inset-0 bg-black opacity-50"></div>
+            </div>
 
-                <h1 className='text-5xl text-center pb-8'> Welcome</h1>
-            <div className="rounded-t-lg h-32 overflow-hidden">
-                <img className="object-cover object-top w-full" src='https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt='Mountain'></img>
-            </div>
-            <div className="mx-auto w-32 h-32 relative -mt-16 border-4 border-white rounded-full overflow-hidden">
-                <img src={user.photoURL} alt="" />
-            </div>
-            <div className="text-center mt-2">
-                <h2 className="font-semibold text-2xl">{user.displayName}</h2>
-                
-            </div>
-            
-            <div className="p-4 border-t mx-8 mt-2">
-                <button className=" block mx-auto rounded-full hover:shadow-lg font-semibold  px-6 py-2">Email : {user.email} </button>
+            <div class="relative z-10 flex flex-col justify-center items-center h-full text-center gap-28">
+                <h1 class="text-5xl text-gray-400 font-bold leading-tight mb-4">Welcome to Our Website</h1>
+                <div class="max-w-sm mx-auto overflow-hidden bg-gray-800 opacity-90 rounded-lg shadow-lg hover:shadow-blue-400">
+                    <div class="relative">
+                        <img class="w-full h-48 object-cover" src={user.photoURL} alt="Profile Image"/>
+                    </div>
+                    <div class="px-6 py-4">
+                        <div class="text-xl font-semibold text-gray-800">{}</div>
+                    </div>
+                    <div class="px-6 py-4 ">
+                        
+                        <span class="inline-block px-2 py-1 font-semibold text-indigo-900 bg-indigo-200 text-5xl rounded-full">{user.displayName}</span>
+                        
+                    </div>
+                    <div class="px-6 py-4">
+                        <p href="#" class="text-blue-500 hover:underline">{user.email}</p>
+                    </div>
+                </div>
             </div>
         </div>
     );

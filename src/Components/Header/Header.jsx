@@ -8,6 +8,7 @@ const Header = () => {
     // console.log(authInfo)
 
     const {user, signOutUser} = useContext(AuthContext)
+    console.log(user)
  
 
     const handleSignOut = () => {
@@ -19,9 +20,9 @@ const Header = () => {
     }
 
     const links = <>
-        <li><NavLink to='/'>Home</NavLink></li>
-        <li><NavLink to='/brand'>Brands</NavLink></li>
-        <li><NavLink to='dev'>About Dev</NavLink></li>
+        <li><NavLink to='/' className='flex gap-2'><img className='w-6' src="https://i.ibb.co.com/LC0J7sb/home-agreement.png" alt="" /><p>Home</p></NavLink></li>
+        <li><NavLink to='/brand' className='flex gap-2'><img className='w-8' src="https://i.ibb.co.com/X5G89nY/brand.png" alt="" /><p>Brands</p></NavLink></li>
+        <li><NavLink to='dev' className='flex gap-2'><img className='w-7' src="https://i.ibb.co.com/1mtdfsn/about.png" alt="" /><p>About Dev</p></NavLink></li>
     </>
     return (
         <div className="w-full mx-auto navbar pt-5 pb-5  top-0 left-0 z-50 ">
