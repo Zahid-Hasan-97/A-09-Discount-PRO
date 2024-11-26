@@ -4,13 +4,20 @@ import brandsData from "../../../public/coupon.json";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProviders";
 
+import Aos from 'aos';
+import 'aos/dist/aos.css'
+
 export const getBrandsOnSale = () => {
     return brandsData.filter((brand) => brand.isSaleOn);
 };
 
-
-
 const Brands = () => {
+
+    useEffect(() => {
+        Aos.init()
+    }, [])
+
+
     const [search, setSearch] = useState("");
     const [brands, setBrands] = useState([]);
 
@@ -62,7 +69,7 @@ const Brands = () => {
                 {filteredBrands.length > 0 ? (
                     filteredBrands.map((brand) => (
 
-                        <div className="w-full flex gap-8">
+                        <div data-aos="fade-right" className="w-full flex gap-8">
                             <div className="p-5 w-1/5 my-auto bg-gray-300 rounded-2xl">
                                 <img
                                     src={brand.brand_logo}

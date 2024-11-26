@@ -17,6 +17,9 @@ import MyProfile from './Components/MyProfile/MyProfile';
 import Brands from './Components/Brand/Brand';
 import AboutDev from './Components/AboutDev/AboutDev';
 import ErrorPage from './Components/ErrorPage/ErrorPage';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const router = createBrowserRouter([
   {

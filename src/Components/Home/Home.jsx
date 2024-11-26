@@ -2,9 +2,14 @@ import React, { useState, useEffect } from 'react';
 import Marquee from 'react-fast-marquee';
 import { getBrandsOnSale } from '../Brand/Brand';
 import { Link } from 'react-router-dom';
-
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 const Home = () => {
+
+    useEffect(()=> {
+        Aos.init()
+    }, [])
     const [brands, setBrands] = useState([]);
     const [loading, setLoading] = useState(true);
 
@@ -74,14 +79,14 @@ const Home = () => {
             </section>
 
             <section className='flex flex-col gap-y-20 pt-20'>
-                <div>
+                <div >
                     <h1 className='text-4xl font-bold text-center animate-bounce text-red-400'>Brands On Sale</h1>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {brandOnSale.length > 0 ? (
                         brandOnSale.map((brand) => (
 
-                            <div key={brand._id} className=" card w-96 shadow-2xl relative">
+                            <div data-aos="zoom-in-up" data-aos-duration="2000" key={brand._id} className=" card w-96 shadow-2xl relative">
                                 <div>
                                     {brand.isSaleOn && (
                                         <span className="flex flex-col justify-center items-center gap-5 pb-5">
@@ -96,8 +101,7 @@ const Home = () => {
                                                     <p>Total Coupons: {brand.coupons.length}</p>
                                                 </div>
                                                 <div className="flex gap-3">
-                                                    <img className="w-6" src="https://i.ibb.co.com/R0c3d0y/categories.png
-https://i.ibb.co.com/BwrbQpq/discount-tag.png" alt="" />
+                                                    <img className="w-6" src="https://i.ibb.co.com/R0c3d0y/categories.png"alt="" />
                                                     <p>{brand.category}</p>
                                                 </div>
 

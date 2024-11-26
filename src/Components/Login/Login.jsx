@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Providers/AuthProviders';
 import { GoogleAuthProvider, signInWithPopup, GithubAuthProvider } from 'firebase/auth';
 import { auth } from '../../firebase.init';
+import 'animate.css'
 
 const Login = () => {
     const [success, setSuccess] = useState(false);
@@ -64,7 +65,7 @@ const Login = () => {
         <div className="hero bg-base-200 min-h-screen">
             <div className="hero-content flex-col ">
                 <div className="text-center lg:text-left">
-                    <h1 className="text-5xl font-bold">Login now!</h1>
+                    <h1 className="text-5xl font-bold animate__tada animate__animated">Login now!</h1>
                 </div>
                 <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                     <form onSubmit={handleLogin} className="card-body">

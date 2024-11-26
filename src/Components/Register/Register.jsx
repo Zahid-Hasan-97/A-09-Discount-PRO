@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Providers/AuthProviders';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { updateProfile } from 'firebase/auth';
+import 'animate.css';
 
 const Register = () => {
     const [showPass, setShowPass] = useState(false)
@@ -64,7 +65,7 @@ const Register = () => {
     return (
         <div className="hero bg-base-200 min-h-screen">
             <div className="hero-content flex-col ">
-                <div className="text-center lg:text-left">
+                <div className="text-center lg:text-left animate__animated animate__bounce">
                     <h1 className="text-5xl font-bold">Register now!</h1>
                 </div>
                 <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">

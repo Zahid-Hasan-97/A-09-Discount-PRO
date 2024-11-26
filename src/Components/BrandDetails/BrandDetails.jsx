@@ -7,9 +7,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const BrandDetails = () => {
-    const handleCopy = (couponCode) => {
-        toast.success(`Coupon code "${couponCode}" copied!`)
-    };
+
 
     const { id } = useParams();
     const brand = brands.find((brand) => brand._id === id);
@@ -43,7 +41,7 @@ const BrandDetails = () => {
                         <div class="bg-white text-gray-800 rounded-lg px-4 py-2 flex items-center justify-between">
                             <span class="text-2xl font-semibold">{coupon.coupon_code}</span>
 
-                            <CopyToClipboard text={coupon.coupon_code} onCopy={() => handleCopy(coupon.coupon_code)}>
+                            <CopyToClipboard>
                                 <button className="bg-gray-700 text-white px-3 py-1 rounded hover:bg-black focus:outline-none focus:ring-2">
                                     Copy Code
                                 </button>
