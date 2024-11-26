@@ -40,7 +40,9 @@ const router = createBrowserRouter([
       },
       {
         path: '/brand/:id',
-        element: <BrandDetails></BrandDetails>
+        element: <PrivateRoute>
+          <BrandDetails></BrandDetails>
+        </PrivateRoute>
       },
       {
         path:'/myprofile',

@@ -1,16 +1,32 @@
 // src/pages/Brands.js
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import brandsData from "../../../public/coupon.json";
 import { Link, useNavigate } from "react-router-dom";
+import BrandDetails from "../BrandDetails/BrandDetails";
+import { AuthContext } from "../../Providers/AuthProviders";
 
 export const getBrandsOnSale = () => {
     return brandsData.filter((brand) => brand.isSaleOn);
 };
 
+
+
 const Brands = () => {
     const [search, setSearch] = useState("");
     const [brands, setBrands] = useState([]);
+
+    const { user } = useContext(AuthContext)
     const navigate = useNavigate();
+
+    const handleViewCoupons = (brand) => {
+        if (user) {
+            // If logged in, navigate to BrandDetails route
+            navigate(`/brand/${brand._id}`, { state: { brand } });
+        } else {
+            // If not logged in, navigate to Login page
+            navigate("/login");
+        }
+    };
 
     useEffect(() => {
         // Load brand data from JSON
@@ -77,13 +93,11 @@ const Brands = () => {
                                         )}
                                     </div>
                                         
-                                    <Link to={`/login`} className=" mt-10 p-3 rounded-2xl bg-red-400 text-white">View Coupons</Link>
-                                      
+                                    <button onClick={() => handleViewCoupons(brand)} className=" mt-10 p-3 rounded-2xl bg-red-400 text-white">View Coupons</button>
+
+ 
                                 </div>
-                                    
-                                
-                                
-                                
+
                             </div>
                         </div>
                         
