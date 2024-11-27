@@ -19,13 +19,13 @@ const MyProfile = () => {
                     <div class="px-6 py-4">
                         <div class="text-xl font-semibold text-gray-800">{}</div>
                     </div>
-                    <div class="px-6 py-4 ">
+                    <div class="px-4 ">
                         
-                        <span class="inline-block px-2 py-1 font-semibold text-indigo-900 bg-indigo-200 text-xl rounded-full">{user.displayName}</span>
+                        <span class="inline-block px-4 py-2 font-semibold text-indigo-900 bg-indigo-200 text-xl rounded-full">{user.displayName}</span>
                         
                     </div>
                     <div class="px-6 py-4">
-                        <p href="#" class="text-blue-500 border rounded-xl  hover:underline">{user.email}</p>
+                        <p href="#" className="text-blue-500 border rounded-xl p-3  hover:underline">{user.email}</p>
                     </div>
                 </div>
             </div>

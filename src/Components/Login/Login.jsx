@@ -1,7 +1,7 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useRef, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Providers/AuthProviders';
-import { GoogleAuthProvider, signInWithPopup, GithubAuthProvider } from 'firebase/auth';
+import { GoogleAuthProvider, signInWithPopup, GithubAuthProvider, sendPasswordResetEmail } from 'firebase/auth';
 import { auth } from '../../firebase.init';
 import 'animate.css'
 import { toast } from "react-toastify";
@@ -10,6 +10,9 @@ import "react-toastify/dist/ReactToastify.css";
 const Login = () => {
     const [success, setSuccess] = useState(false);
     const [loginError, setLoginError] = useState('')
+
+    const emailRef = useRef();
+
     const provider = new GoogleAuthProvider();
     const githubProvider = new GithubAuthProvider();
     const handleGoogleSignIn = () =>{
@@ -65,6 +68,21 @@ const Login = () => {
         })
     }
 
+    const handleForgetPassword = () =>{
+
+        const email = emailRef.current.value;
+        if(!email){
+            console.log('Provide a valid email address')
+        }
+        else{
+            sendPasswordResetEmail(auth, email)
+            .then(()=>{
+                alert('Password reset email sent, please check your mail')
+            })
+        }
+
+    }
+
     return (
         <div className="hero bg-base-200 min-h-screen">
             <div className="hero-content flex-col ">
@@ -77,14 +95,14 @@ const Login = () => {
                             <label className="label">
                                 <span className="label-text">Email</span>
                             </label>
-                            <input type="email" name='email' placeholder="email" className="input input-bordered" required />
+                            <input type="email" name='email' ref={emailRef} placeholder="email" className="input input-bordered" required />
                         </div>
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Password</span>
                             </label>
                             <input type="password" name='password' placeholder="password" className="input input-bordered" required />
-                            <label className="label">
+                            <label onClick={handleForgetPassword} className="label">
                                 <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                             </label>
                         </div>
