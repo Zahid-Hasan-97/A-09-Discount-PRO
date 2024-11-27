@@ -4,6 +4,8 @@ import { AuthContext } from '../../Providers/AuthProviders';
 import { GoogleAuthProvider, signInWithPopup, GithubAuthProvider } from 'firebase/auth';
 import { auth } from '../../firebase.init';
 import 'animate.css'
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Login = () => {
     const [success, setSuccess] = useState(false);
@@ -51,7 +53,9 @@ const Login = () => {
         .then(result => {
             console.log(result.user);
             e.target.reset();
-            navigate('/')
+            setTimeout(() => {
+                navigate('/');
+            }, 1000);
             setSuccess(true)
         })
         .catch(error => {
@@ -100,7 +104,7 @@ const Login = () => {
                     </form>
 
                     {
-                        success && <p className='text-green-600'> Successfully Logged In</p>
+                        success && <p onLoad={toast.success("Successfully Logged In")} className='text-green-600'></p>
                     }
                     {
                         loginError && <p className='text-red-600'>{loginError}</p>
